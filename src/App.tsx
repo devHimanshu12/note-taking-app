@@ -99,7 +99,7 @@ function App() {
     <>
     <Container className="my-4">
     <Routes>
-      <Route  path="/" element={<NoteList notes={notesWithTags} availableTags={tags}
+      <Route  path="/note-taking-app" element={<NoteList notes={notesWithTags} availableTags={tags}
        onUpdateTag={updateTag} onDeleteTag={deleteTag}/>}/>
       <Route  path="/new" element={ <NewNote onSubmit={onCreateNotes} 
         onAddTag={addTag}
